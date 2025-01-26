@@ -78,8 +78,16 @@ const CustomerFeedback = () => {
     },
   ];
   return (
-    <div className="flex flex-col items-center gap-4 min-h-screen  py-10">
+    <div>
+   <div className="pt-3 text-black font-bold">
+   <p >Latest Blog Post</p>
+   <hr/>
+   </div>
+    <div className="flex flex-col border shadow-lg rounded p-4   gap-4 min-h-screen  py-10">
+    
+        <div className="text-[1.5rem] font-bold text-[#112F46]">
         <h2>Customer Reviews</h2>
+        </div>
       {feedbackData.map((feedback, index) => (
         <FeedbackCard
           key={index}
@@ -90,6 +98,7 @@ const CustomerFeedback = () => {
           description={feedback.description}
         />
       ))}
+    </div>
     </div>
   );
 };

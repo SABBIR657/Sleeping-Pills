@@ -69,7 +69,7 @@ const FeedbackCard = ({ image, star, name, date, description }) => {
     //     <p className="text-gray-600 text-sm">{description}</p>
       
     // </div>
-    <div className="w-full rounded-2xl overflow-hidden shadow-lg bg-white p-4">
+    <div className="w-full rounded-2xl overflow-hidden  bg-white p-4">
         <div className="flex ">
 
         
@@ -81,12 +81,12 @@ const FeedbackCard = ({ image, star, name, date, description }) => {
           className="w-16 h-16 rounded-full object-cover border border-gray-300"
         />
       ) : (
-        <div className="w-16 h-16 rounded-full bg-gray-300 flex items-center justify-center text-xl font-semibold text-white">
+        <div className="w-16 h-16 rounded-full bg-[#DDDDDD] flex items-center justify-center text-xl font-semibold text-black ">
           {getInitial(name)}
         </div>
       )}
     </div>
-    <div className="border w-full p-3 rounded-lg">
+    <div className="border w-full p-3 rounded-lg ml-3">
       <div className="flex items-center mb-2">
         {[...Array(star)].map((_, index) => (
           <span key={index} className="text-yellow-500 text-lg">

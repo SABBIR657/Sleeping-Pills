@@ -2,9 +2,9 @@ import React from "react";
 
 const Medication = () => {
   return (
-    <div>
+    <div className="pt-7 w-full">
       <div>
-        <h2>What is Insomnia?</h2>
+        <h2 className="font-bold text-[#112F46]">What is Insomnia?</h2>
         <p>
           Insomnia can be defined as the inability to fall asleep at night. Most
           cases of insomnia can be transient and usually pass without the need
@@ -17,7 +17,7 @@ const Medication = () => {
         </p>
       </div>
       <div>
-        <h2>Types of Insomnia</h2>
+        <h2 className="font-bold text-[#112F46]">Types of Insomnia</h2>
         <p>
           There are a number of sleeping problems that may be defined as
           insomnia. These include problems falling asleep at night, waking up
@@ -28,7 +28,7 @@ const Medication = () => {
         </p>
       </div>
       <div>
-        <h2>Causes of Insomnia</h2>
+        <h2 className="font-bold text-[#112F46]">Causes of Insomnia</h2>
         <p>
           There are a number of factors that may cause insomnia. Often, medical
           conditions can trigger periods of sleeplessness. These may include
@@ -46,7 +46,7 @@ const Medication = () => {
         </p>
       </div>
       <div>
-        <h2>How to Deal with Insomnia without Sleeping Tablets</h2>
+        <h2 className="font-bold text-[#112F46]">How to Deal with Insomnia without Sleeping Tablets</h2>
         <p>
           <span>
             There are a number of ways to deal with insomnia problems without
@@ -102,7 +102,7 @@ const Medication = () => {
         </p>
       </div>
       <div>
-        <h2>Why and When Do You Need Sleeping Pills?</h2>
+        <h2 className="font-bold text-[#112F46]">Why and When Do You Need Sleeping Pills?</h2>
         <p>
           For people who suffer with severe or chronic insomnia, sometimes
           lifestyle changes alone will not be sufficient to provide a good
@@ -123,7 +123,7 @@ const Medication = () => {
         </p>
       </div>
       <div>
-        <h2>Different Types of Strong Sleeping Pills Medication</h2>
+        <h2 className="font-bold text-[#112F46]">Different Types of Strong Sleeping Pills Medication</h2>
         <p>
           There are a number of different medications which are known to quickly
           induce sleep when suffering from insomnia. The most commonly used
@@ -136,7 +136,7 @@ const Medication = () => {
         </p>
       </div>
       <div>
-        <h2>Can Sleeping Pills be Ordered Online to Treat Insomnia?</h2>
+        <h2 className="font-bold text-[#112F46]">Can Sleeping Pills be Ordered Online to Treat Insomnia?</h2>
         <p>
           The answer to this question is yes, but some precautions are
           recommended before deciding to do so. All attempts to treat insomnia
