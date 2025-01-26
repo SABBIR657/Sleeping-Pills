@@ -4,28 +4,28 @@ import toast from "react-hot-toast";
 
 
 const Home = () => {
-  const onSuccess = (data)=> {
-    console.log(data)
-    toast.success("product is created")
-  }
-  const onError = (err)=> {
-console.log(err)
-toast.error("somewthing went wrong")
+//   const onSuccess = (data)=> {
+//     console.log(data)
+//     toast.success("product is created")
+//   }
+//   const onError = (err)=> {
+// console.log(err)
+// toast.error("somewthing went wrong")
 
-  }
-  const {isPending: isLoading, mutate} = usePostMutate('/products/add', onSuccess, onError)
+//   }
+//   const {isPending: isLoading, mutate} = usePostMutate('/products/add', onSuccess, onError)
 
 
-  return(
-   <>
+//   return(
+//    <>
 
-<Button isLoading={isLoading} onClick={()=> {mutate({
-   title: 'Shirt',  
-   price: 20
-})}} >Add Product</Button>
+// <Button isLoading={isLoading} onClick={()=> {mutate({
+//    title: 'Shirt',  
+//    price: 20
+// })}} >Add Product</Button>
 
-    </>
-  );
+//     </>
+//   );
 };
 
 export default Home;
