@@ -4,13 +4,62 @@ import { IoLogoAndroid } from "react-icons/io";
 const Hero = () => {
   return (
     <div className="flex mt-1">
-      <Image
-        alt="HeroUI hero Image"
-        src="https://www.sleepingpillsuk.com/images/banner2.jpg"
-        width={998}
-        height={210}
-        
-      />
+     
+{/*      
+     <div className="flex">
+
+    <Image
+      alt="HeroUI hero Image"
+      src="https://www.sleepingpillsuk.com/images/banner2.jpg"
+      width={998}
+      height={210}
+     
+    />
+
+
+  <div
+    id="pill"
+    className="absolute 
+       float-right w-full top-60 z-50 flex bg-black text-red-600 "
+  >
+    <div>
+      <h1 className="text-lg font-bold pt-3">GET 10% OFF ON EVERY ORDER!</h1>
+    </div>
+    <div className="mt-2">
+      <p className="text-sm font-medium">APPLY CODE</p>
+      <h1 className="text-2xl font-extrabold text-red-700">SLEEP2025</h1>
+    </div>
+  </div>
+</div> */}
+
+<div className="relative">
+  <Image
+    alt="HeroUI hero Image"
+    src="https://www.sleepingpillsuk.com/images/banner2.jpg"
+    width={998}
+    height={210}
+    className=" "
+  />
+
+  <div
+    id="pill"
+    className="absolute top-0 right-0 w-[328px] mt-20 mr-4 z-50 flex flex-col justify-center items-center bg-white rounded-lg  p-2 border-1 border-dashed border-black "
+  >
+    <div className="flex">
+    <div>
+      <h1 className="text-lg font-bold pt-3 text-center">
+        GET 10% OFF ON EVERY ORDER!
+      </h1>
+    </div>
+    <div className="mt-2 text-center">
+      <p className="text-sm font-medium">APPLY CODE</p>
+      <h1 className="text-2xl font-extrabold text-white bg-[#002039] p-2 border-1 border-dashed border-white">SLEEP2025</h1>
+    </div>
+    </div>
+  </div>
+</div>
+
+
       <div className="bg-[#0586aa] w-[400px]">
       <div className="flex justify-center items-center ">
       <Image

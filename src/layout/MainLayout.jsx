@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom";
 // import { SecondHeader } from "./Navbar";
-import Footer from "./Footer";
 import Header from "./Navbar";
 import CompanyDetails from "../components/Home/CompanyDetails";
 import Medicine from "../components/Home/Medicine";
@@ -8,6 +7,7 @@ import ServiceCard from "../components/Home/ServiceCard";
 import Medication from "../components/Home/Medication";
 import CustomerFeedback from "../components/Home/CustomerFeedback";
 import CustomerReview from "../components/Home/CustomerReview";
+import Footer from "../components/Home/Footer";
 
 export default function MainLayout() {
   return (
@@ -21,13 +21,14 @@ export default function MainLayout() {
       <Medication/>
       <CustomerFeedback/>
       <CustomerReview/>
-
-      <div className="   min-h-screen       py-20 flex max-h-full   flex-nowrap justify-start  transition-[padding] duration-200 p-0">
+      {/* <Footer/> */}
+      
+      <div className="   min-h-screen       py-20 flex    flex-nowrap justify-start  transition-[padding] duration-200 p-0">
         <div className=" w-full">
           <Outlet />
         </div>
       </div>
-      <Footer />
+     
     </div>
   );
 }

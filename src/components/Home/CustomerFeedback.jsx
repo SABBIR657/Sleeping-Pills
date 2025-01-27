@@ -83,7 +83,7 @@ const CustomerFeedback = () => {
    <p >Latest Blog Post</p>
    <hr/>
    </div>
-    <div className="flex flex-col border shadow-lg rounded p-4   gap-4 min-h-screen  py-10">
+    <div className="flex flex-col border shadow-lg rounded p-4   gap-4   py-10">
     
         <div className="text-[1.5rem] font-bold text-[#112F46]">
         <h2>Customer Reviews</h2>

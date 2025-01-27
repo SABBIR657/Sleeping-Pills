@@ -73,9 +73,34 @@ export default function CustomerReview() {
           ></textarea>
         </div>
 
+        <div className="flex items-center border border-gray-300 bg-white p-4 rounded-lg shadow-lg w-full max-w-sm">
+      {/* Left Side */}
+      <div className="flex items-center mr-4">
+        <input
+          type="checkbox"
+          id="not-a-robot"
+          className="w-5 h-5 rounded border-gray-400 focus:ring-blue-500"
+        />
+        <label
+          htmlFor="not-a-robot"
+          className="ml-2 text-gray-800 text-base font-medium"
+        >
+          I'm not a robot
+        </label>
+      </div>
+
+      {/* Right Side */}
+      <div className="flex flex-col items-center">
+        <div className="bg-gray-200 w-32 h-16 rounded-md flex items-center justify-center border border-gray-300">
+          <span className="text-gray-500 text-sm font-medium">reCAPTCHA</span>
+        </div>
+        <p className="mt-1 text-xs text-gray-500">Privacy - Terms</p>
+      </div>
+    </div>
+
         <button
           type="submit"
-          className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition"
+          className=" bg-[#002039] p-4 mt-2 text-white py-2  hover:bg-[#E65700] transition"
         >
           Submit
         </button>
