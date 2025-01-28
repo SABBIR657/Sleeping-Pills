@@ -44,10 +44,9 @@
 
 //     <div>
 //       <div className=" flex  space-x-3 bg-[#0685a9] py-2 mt-1  ">
-       
+
 //           <div
-       
-            
+
 //             className="text-white  font-bold border-r-2 w-full px-0   sm:flex gap-[1px] "
 //             onMouseEnter={() => navlink.submenu && setShowSubmenu(true)}
 //             onMouseLeave={() => navlink.submenu && setShowSubmenu(false)}
@@ -80,47 +79,73 @@
 //   );
 // }
 
-
-
-
-
 import { NavLink } from "react-router-dom";
 
 import { FaHome } from "react-icons/fa";
 export default function Bannner() {
-  const navigationItems = [
-    {
-      title: (
-        <section className="flex items-center pl-7 space-x-1">
-          <FaHome /> <span>Home</span>
-        </section>
-      ),
-      href: "/",
-    },
-    { title: "About Us", href: "/about" },
-    { title: "Products", href: "/products" },
-    { title: "FAQS", href: "/faqs" },
-    { title: "Testimonials", href: "/testimonials" },
-    { title: "Blog", href: "/blog" },
-    { title: "Contact Us", href: "/contact" },
-    { title: "Bitcoin Discount", href: "/bitcoin" },
-  ];
+  // const navigationItems = [
+  //   {
+  //     title: (
+  //       <section className="flex items-center pl-7 space-x-1">
+  //         <FaHome /> <span>Home</span>
+  //       </section>
+  //     ),
+  //     href: "/",
+  //   },
+  //   { title: "About Us", href: "/about" },
+  //   { title: "Products", href: "/products" },
+  //   { title: "FAQS", href: "/faqs" },
+  //   { title: "Testimonials", href: "/testimonials" },
+  //   { title: "Blog", href: "/blog" },
+  //   { title: "Contact Us", href: "/contact" },
+  //   { title: "Bitcoin Discount", href: "/bitcoin" },
+  // ];
 
   return (
     <div>
-      <div className="flex g:grid-cols-9 space-x-3 bg-[#0685a9] py-2 mt-1 ">
-        {navigationItems?.map((navlink) => {
-          return (
-            <NavLink
-              key={navlink.title}
-              to={navlink.href}
-              className="text-white font-bold border-r-1 text-center flex-1"
-            >
-              {navlink?.title}
-            </NavLink>
-          );
-        })}
-      </div>
-    </div>
+  <div className="flex space-x-3 bg-[#0685a9] py-2 mt-1">
+    <nav className="w-full">
+      <ul className="flex items-center justify-center text-white font-bold space-x-6 w-full">
+        <li className="flex items-center px-4 relative">
+          <FaHome />
+          <NavLink to="/" className="ml-2">Home</NavLink>
+          <div className="absolute top-0 right-0 h-full border-r border-white"></div>
+        </li>
+        <li className="flex items-center px-4 relative">
+          <NavLink to="/about-us" className="">About Us</NavLink>
+          <div className="absolute top-0 right-0 h-full border-r border-white"></div>
+        </li>
+        <li className="flex items-center px-4 relative group z-50">
+          <NavLink to="" className="">Products</NavLink>
+          <div className="absolute top-full left-0 w-48 bg-white text-black shadow-lg rounded hidden group-hover:flex flex-col">
+            <NavLink to="/products/sleeping-tablets" className="py-2 px-4 hover:bg-gray-200">Sleeping Tablets</NavLink>
+            <NavLink to="/products/anxiety-medication" className="py-2 px-4 hover:bg-gray-200">Anxiety Medication</NavLink>
+            <NavLink to="/products/painkillers" className="py-2 px-4 hover:bg-gray-200">Painkillers</NavLink>
+            <NavLink to="/products/nootropics" className="py-2 px-4 hover:bg-gray-200">Nootropics</NavLink>
+          </div>
+          <div className="absolute top-0 right-0 h-full border-r border-white"></div>
+        </li>
+        <li className="flex items-center px-4 relative">
+          <NavLink to="/faqs" className="">FAQS</NavLink>
+          <div className="absolute top-0 right-0 h-full border-r border-white"></div>
+        </li>
+        <li className="flex items-center px-4 relative">
+          <NavLink to="/testimonial" className="">Testimonial</NavLink>
+          <div className="absolute top-0 right-0 h-full border-r border-white"></div>
+        </li>
+        <li className="flex items-center px-4 relative">
+          <NavLink to="/contact-us" className="">Contact Us</NavLink>
+          <div className="absolute top-0 right-0 h-full border-r border-white"></div>
+        </li>
+        <li className="flex items-center px-4">
+          <NavLink to="/bitcoin-discount" className="">Bitcoin Discount</NavLink>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
+  
   );
 }
