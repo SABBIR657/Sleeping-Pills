@@ -1,9 +1,6 @@
 
 import CommonWrapper from "../../components/CommonWrapper";
 import FiveStarRating from "../../components/ui/Star";
-
-import Medicine from "../../components/Home/Medicine";
-import FeedbackCard from "../../components/ui/FeedbackCard";
 import CustomerReview from "../../components/Home/CustomerReview";
 import NavSection from "../../components/Home/NavSection";
 import {Breadcrumbs, BreadcrumbItem} from "@heroui/react";

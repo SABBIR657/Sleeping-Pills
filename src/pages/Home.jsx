@@ -1,6 +1,4 @@
-import { Button } from "@nextui-org/react";
-import usePostMutate from "../hooks/shared/usePostMutate";
-import toast from "react-hot-toast";
+
 
 
 const Home = () => {

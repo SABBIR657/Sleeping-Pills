@@ -22,7 +22,7 @@ export default function Bannner() {
 
   return (
     <div>
-      <div className="flex g:grid-cols-9 space-x-3 bg-[#0685a9] py-2 mt-1 ">
+      <div className="flex g:grid-cols-9 space-x-3 bg-[#0685a9] py-2 mt-1  ">
         {navigationItems?.map((navlink) => {
           return (
             <NavLink

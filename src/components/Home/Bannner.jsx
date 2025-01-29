@@ -1,151 +1,182 @@
-// import { NavLink } from "react-router-dom";
-// import { FaHome } from "react-icons/fa";
-// import { useState } from "react";
-
-// export default function Bannner() {
-//   const [showSubmenu, setShowSubmenu] = useState(false);
-//   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-//   const handleMouseEnter = () =>{
-//     setIsDropdownOpen(true)
-//   }
-//   const handleMouseLeave = () =>{
-//     setIsDropdownOpen(false);
-//   }
-
-//   const navigationItems = [
-//     {
-//       title: (
-//         <section className="flex items-center pl-8 space-x-1">
-//           <FaHome /> <span>Home</span>
-//         </section>
-//       ),
-//       href: "/",
-//     },
-//     { title: "About Us", href: "/about" },
-//     {
-//       title: "Products",
-//       href: "/products",
-//       submenu: [
-//         { title: "Sleeping Tablets", href: "/products/sleeping-tablets" },
-//         { title: "Anxiety Medication", href: "/products/anxiety-medication" },
-//         { title: "Painkillers", href: "/products/painkillers" },
-//         { title: "Nootropics", href: "/products/nootropics" },
-//       ],
-//     },
-//     { title: "FAQS", href: "/faqs" },
-//     { title: "Testimonials", href: "/testimonials" },
-//     { title: "Blog", href: "/blog" },
-//     { title: "Contact Us", href: "/contact" },
-//     { title: "Bitcoin Discount", href: "/bitcoin" },
-//   ];
-
-//   return (
-
-//     <div>
-//       <div className=" flex  space-x-3 bg-[#0685a9] py-2 mt-1  ">
-
-//           <div
-
-//             className="text-white  font-bold border-r-2 w-full px-0   sm:flex gap-[1px] "
-//             onMouseEnter={() => navlink.submenu && setShowSubmenu(true)}
-//             onMouseLeave={() => navlink.submenu && setShowSubmenu(false)}
-//           >
-//             <NavLink
-//               to={navlink.href}
-//               className="text-white font-bold   text-center flex-1"
-//             >
-//               {navlink?.title}
-//             </NavLink>
-
-//             {/* Submenu */}
-//             {navlink.submenu && showSubmenu && (
-//               <div className="relative  left-0 mt-2 bg-white shadow-lg rounded-lg p-2 ">
-//                 {navlink.submenu.map((item) => (
-//                   <NavLink
-//                     key={item.title}
-//                     to={item.href}
-//                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-//                   >
-//                     {item.title}
-//                   </NavLink>
-//                 ))}
-//               </div>
-//             )}
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
-
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { FaHome, FaBars, FaTimes } from "react-icons/fa";
 
-import { FaHome } from "react-icons/fa";
 export default function Bannner() {
-  // const navigationItems = [
-  //   {
-  //     title: (
-  //       <section className="flex items-center pl-7 space-x-1">
-  //         <FaHome /> <span>Home</span>
-  //       </section>
-  //     ),
-  //     href: "/",
-  //   },
-  //   { title: "About Us", href: "/about" },
-  //   { title: "Products", href: "/products" },
-  //   { title: "FAQS", href: "/faqs" },
-  //   { title: "Testimonials", href: "/testimonials" },
-  //   { title: "Blog", href: "/blog" },
-  //   { title: "Contact Us", href: "/contact" },
-  //   { title: "Bitcoin Discount", href: "/bitcoin" },
-  // ];
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
-  <div className="flex space-x-3 bg-[#0685a9] py-2 mt-1">
-    <nav className="w-full">
-      <ul className="flex items-center justify-center text-white font-bold space-x-6 w-full">
-        <li className="flex items-center px-4 relative">
-          <FaHome />
-          <NavLink to="/" className="ml-2">Home</NavLink>
-          <div className="absolute top-0 right-0 h-full border-r border-white"></div>
-        </li>
-        <li className="flex items-center px-4 relative">
-          <NavLink to="/about-us" className="">About Us</NavLink>
-          <div className="absolute top-0 right-0 h-full border-r border-white"></div>
-        </li>
-        <li className="flex items-center px-4 relative group z-50">
-          <NavLink to="" className="">Products</NavLink>
-          <div className="absolute top-full left-0 w-48 bg-white text-black shadow-lg rounded hidden group-hover:flex flex-col">
-            <NavLink to="/products/sleeping-tablets" className="py-2 px-4 hover:bg-gray-200">Sleeping Tablets</NavLink>
-            <NavLink to="/products/anxiety-medication" className="py-2 px-4 hover:bg-gray-200">Anxiety Medication</NavLink>
-            <NavLink to="/products/painkillers" className="py-2 px-4 hover:bg-gray-200">Painkillers</NavLink>
-            <NavLink to="/products/nootropics" className="py-2 px-4 hover:bg-gray-200">Nootropics</NavLink>
-          </div>
-          <div className="absolute top-0 right-0 h-full border-r border-white"></div>
-        </li>
-        <li className="flex items-center px-4 relative">
-          <NavLink to="/faqs" className="">FAQS</NavLink>
-          <div className="absolute top-0 right-0 h-full border-r border-white"></div>
-        </li>
-        <li className="flex items-center px-4 relative">
-          <NavLink to="/testimonial" className="">Testimonial</NavLink>
-          <div className="absolute top-0 right-0 h-full border-r border-white"></div>
-        </li>
-        <li className="flex items-center px-4 relative">
-          <NavLink to="/contact-us" className="">Contact Us</NavLink>
-          <div className="absolute top-0 right-0 h-full border-r border-white"></div>
-        </li>
-        <li className="flex items-center px-4">
-          <NavLink to="/bitcoin-discount" className="">Bitcoin Discount</NavLink>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</div>
+      {/* Full Navbar (Visible on Desktop) */}
+      <div className="">
+        <div className="hidden md:flex  bg-[#0685a9] py-2 mt-1">
+          <nav className="w-full">
+            <ul className="flex items-center justify-center text-white font-bold  w-full">
+              <li className="flex items-center px-[35px]   relative">
+                <FaHome />
+                <NavLink to="/" className="">
+                  Home
+                </NavLink>
+                <div className="absolute top-0 right-0 h-full border-r border-white"></div>
+              </li>
+              <li className="flex items-center px-[35px]  relative">
+                <NavLink to="/about-us" className="">
+                  About Us
+                </NavLink>
+                <div className="absolute top-0 right-0 h-full border-r border-white"></div>
+              </li>
+              <li className="flex items-center   px-[35px]  relative group z-50">
+                <NavLink to="" className="">
+                  Products
+                </NavLink>
 
+                {/* First Level Dropdown */}
+                <div className="absolute top-full left-0 w-48 bg-[#057793] text-white rounded hidden group-hover:flex flex-col">
+                  {/* Sleeping Tablets with Nested Dropdown */}
+                  <div className="relative group/sleeping mt-5">
+                    <NavLink
+                      to="/products/sleeping-tablets"
+                      className="py-2 px-4 hover:bg-[#C43838]"
+                    >
+                      Sleeping Tablets
+                    </NavLink>
 
-  
+                    {/* Second Level Dropdown for Sleeping Tablets */}
+                    <div className="absolute top-0 left-full w-48 bg-[#057793] text-white rounded hidden group-hover/sleeping:flex flex-col">
+                      <NavLink to="" className="py-2 px-4 hover:bg-[#C43838]">
+                        Zopiclone 7.5 mg/10 mg
+                      </NavLink>
+                      <NavLink to="" className="py-2 px-4 hover:bg-[#C43838]">
+                        Zolpidem 10 mg
+                      </NavLink>
+                      <NavLink to="" className="py-2 px-4 hover:bg-[#C43838]">
+                        Nitrazepam 10 mg
+                      </NavLink>
+                      <NavLink to="" className="py-2 px-4 hover:bg-[#C43838]">
+                        Eszopiclone
+                      </NavLink>
+                      <NavLink to="" className="py-2 px-4 hover:bg-[#C43838]">
+                        Zaleplon 10 mg
+                      </NavLink>
+                    </div>
+                  </div>
+
+                  {/* Anxiety Medication with Nested Dropdown */}
+                  <div className="relative group/anxiety mt-3">
+                    <NavLink
+                      to="/products/anxiety-medication"
+                      className="py-2 px-4 hover:bg-[#C43838]"
+                    >
+                      Anxiety Medication
+                    </NavLink>
+
+                    {/* Second Level Dropdown for Anxiety Medication */}
+                    <div className="absolute top-0 left-full w-48 bg-[#057793] text-white rounded hidden group-hover/anxiety:flex flex-col">
+                      <NavLink to="" className="py-2 px-4 hover:bg-[#C43838]">
+                        Diazepam 10 mg
+                      </NavLink>
+                      <NavLink to="" className="py-2 px-4 hover:bg-[#C43838]">
+                        Xanax 1 mg
+                      </NavLink>
+                      <NavLink to="" className="py-2 px-4 hover:bg-[#C43838]">
+                        Etizolam 1 mg
+                      </NavLink>
+                      <NavLink to="" className="py-2 px-4 hover:bg-[#C43838]">
+                        Clonazepam 2 mg
+                      </NavLink>
+                      <NavLink to="" className="py-2 px-4 hover:bg-[#C43838]">
+                        Lorazepam
+                      </NavLink>
+                    </div>
+                  </div>
+
+                  <NavLink
+                    to="/products/painkillers"
+                    className="py-2 px-4 hover:bg-[#C43838]"
+                  >
+                    Painkillers
+                  </NavLink>
+                  <NavLink
+                    to="/products/nootropics"
+                    className="py-2 px-4 hover:bg-[#C43838]"
+                  >
+                    Nootropics
+                  </NavLink>
+                </div>
+
+                <div className="absolute top-0 right-0 h-full border-r border-white"></div>
+              </li>
+
+              <li className="flex items-center px-[35px]  relative">
+                <NavLink to="/faqs" className="">
+                  FAQS
+                </NavLink>
+                <div className="absolute top-0 right-0 h-full border-r border-white"></div>
+              </li>
+              <li className="flex items-center px-[35px]   relative">
+                <NavLink to="/testimonial" className="">
+                  Testimonial
+                </NavLink>
+                <div className="absolute top-0 right-0 h-full border-r border-white"></div>
+              </li>
+              <li className="flex items-center text-center px-[35px] relative">
+                <NavLink to="/contact-us" className="">
+                  Contact Us
+                </NavLink>
+                <div className="absolute top-0 right-0 h-full border-r border-white"></div>
+              </li>
+              <li className="flex items-center text-center px-[35px] flex-1">
+                <NavLink to="/bitcoin-discount" className="">
+                  Bitcoin Discount
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      {/* Mobile Navbar (Hidden on Desktop) */}
+      <div className="md:hidden bg-[#002039] py-1">
+        <div className="flex items-center justify-center px-4">
+          {/* <h1 className="text-white font-bold text-xl">Menu</h1> */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-white text-2xl"
+          >
+            {isOpen ? <FaTimes /> : <FaBars />}
+          </button>
+        </div>
+
+        {/* Mobile Navigation Menu */}
+        <ul
+          className={`${
+            isOpen ? "flex flex-col" : "hidden"
+          } py-2 text-white font-bold`}
+        >
+          <li className="px-4 py-2 border-b border-white">
+            <FaHome className="inline mr-2" />
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li className="px-4 py-2 border-b border-white">
+            <NavLink to="/about-us">About Us</NavLink>
+          </li>
+          <li className="px-4 py-2 border-b border-white">
+            <NavLink to="/products">Products</NavLink>
+          </li>
+          <li className="px-4 py-2 border-b border-white">
+            <NavLink to="/faqs">FAQS</NavLink>
+          </li>
+          <li className="px-4 py-2 border-b border-white">
+            <NavLink to="/testimonial">Testimonial</NavLink>
+          </li>
+          <li className="px-4 py-2 border-b border-white">
+            <NavLink to="/contact-us">Contact Us</NavLink>
+          </li>
+          <li className="px-4 py-2 border-b border-white">
+            <NavLink to="/bitcoin-discount">Bitcoin Discount</NavLink>
+          </li>
+        </ul>
+      </div>
+    </div>
   );
 }
