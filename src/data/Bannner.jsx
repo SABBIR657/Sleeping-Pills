@@ -11,7 +11,7 @@ export default function Bannner() {
       ),
       href: "/",
     },
-    { title: "About Us", href: "/about" },
+    { title: "About Us", href: "/about-us" },
     { title: "Products", href: "/products" },
     { title: "FAQS", href: "/faqs" },
     { title: "Testimonials", href: "/testimonials" },

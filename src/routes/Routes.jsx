@@ -8,6 +8,8 @@ import SleepingTablents from "../pages/Products/SleepingTablents";
 import AnixietyMedication from "../pages/Products/AnixietyMedication";
 import PainKillers from "../pages/Products/PainKillers";
 import Nootropics from "../pages/Products/Nootropics";
+import AboutUs from "../components/About-Us/AboutUs";
+import Faqs from "../components/FAQS/Faqs";
 
 const routes = createBrowserRouter([
   {
@@ -63,9 +65,22 @@ const routes = createBrowserRouter([
   },
 
   {
+    index: true,
+    path: "/about-us",
+    element: <AboutUs/>
+
+  },
+  {
+     index: true,
+     path: "/faqs",
+     element: <Faqs/>
+  },
+
+  {
     path: "*",
     element: <NotFound />,
   },
+  
 ]);
 
 export default routes;
