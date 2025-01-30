@@ -4,7 +4,7 @@ import App from "../App";
 import NotFound from "../pages/NotFound";
 import SignIn from "../pages/SignIn";
 import SignUp from "../pages/SignUp";
-import PainKillers from "../pages/Products/PainKillers";
+import PainKillers from "../pages/Products/PainKillers.jsx";
 import AboutUs from "../components/About-Us/AboutUs.jsx";
 import Faqs from "../components/FAQS/Faqs.jsx";
 import Testimonial from "../components/Testimonial/Testimonial.jsx";
