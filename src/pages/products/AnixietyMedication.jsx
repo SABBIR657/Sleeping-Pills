@@ -9,7 +9,7 @@ import NavSection from "../../components/Home/NavSection";
 import {Breadcrumbs, BreadcrumbItem} from "@heroui/react";
 import MedicineCard from "../../components/ui/MedicineCard";
 
-const AnixietyMedication= () => {
+const AnxietyMedication= () => {
   return (
     <div className="">
       <NavSection/>
@@ -17,7 +17,7 @@ const AnixietyMedication= () => {
       <div className="mt-2 bg-[#E9ECEF] p-2 font-bold" >
      <Breadcrumbs>
         <BreadcrumbItem>Home</BreadcrumbItem>
-        <BreadcrumbItem>Anixiety Tablets</BreadcrumbItem>
+        <BreadcrumbItem>Anxiety Tablets</BreadcrumbItem>
         </Breadcrumbs>
      </div>
 
@@ -83,5 +83,5 @@ imgSrc="https://www.sleepingpillsuk.com/product-img/diazepam.png" radioOptions={
   );
 };
 
-export default AnixietyMedication;
+export default AnxietyMedication;
 

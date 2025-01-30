@@ -8,7 +8,7 @@ import NavSection from "../../components/Home/NavSection";
 import { Breadcrumbs, BreadcrumbItem } from "@heroui/react";
 import MedicineCard from "../../components/ui/MedicineCard";
 
-const Nootropics = () => {
+const NotrePics = () => {
   return (
     <div className="">
       <NavSection />
@@ -106,4 +106,4 @@ const Nootropics = () => {
   );
 };
 
-export default Nootropics;
+export default NotrePics;
