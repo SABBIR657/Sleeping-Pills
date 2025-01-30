@@ -6,7 +6,7 @@ import NavSection from "../../components/Home/NavSection";
 import {Breadcrumbs, BreadcrumbItem} from "@heroui/react";
 import MedicineCard from "../../components/ui/MedicineCard";
 
-const Painkillers = () => {
+const PainKillers = () => {
 
   return (
         <div className="">
@@ -81,5 +81,5 @@ imgSrc="https://www.sleepingpillsuk.com/product-img/diazepam.png" radioOptions={
   )
 }
 
-export default Painkillers
+export default PainKillers
 
