@@ -8,10 +8,10 @@ import AboutUs from "../components/About-Us/AboutUs.jsx";
 import Faqs from "../components/FAQS/Faqs.jsx";
 import Testimonial from "../components/Testimonial/Testimonial.jsx";
 import BuyMedicine from "../components/BuyMedicine/BuyMedicine.jsx";
-import SleepingTablets from "../pages/products/SleepingTablets.jsx";
-import AnxietyMedication from "../pages/products/AnxietyMedication.jsx";
-import NotrePics from "../pages/products/NotrePics.jsx";
-import PainKillers from "../pages/Products/PainKillers";
+import SleepingTablets from "../pages/Products/SleepingTablets.jsx";
+import AnxietyMedication from "../pages/Products/AnxietyMedication.jsx";
+import NotrePics from "../pages/Products/NotrePics.jsx";
+import PainKillers from "../pages/Products/PainKillers.jsx";
 
 
 
