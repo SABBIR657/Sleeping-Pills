@@ -10,6 +10,8 @@ import PainKillers from "../pages/Products/PainKillers";
 import Nootropics from "../pages/Products/Nootropics";
 import AboutUs from "../components/About-Us/AboutUs";
 import Faqs from "../components/FAQS/Faqs";
+import Testimonial from "../components/Testimonial/Testimonial";
+import BuyMedicine from "../components/BuyMedicine/BuyMedicine";
 
 const routes = createBrowserRouter([
   {
@@ -75,11 +77,22 @@ const routes = createBrowserRouter([
      path: "/faqs",
      element: <Faqs/>
   },
+  {
+      index: true,
+      path: "/testimonial",
+      element: <Testimonial/>
+  },
+  {
+     index: true,
+     path: "/buyMedicine",
+     element: <BuyMedicine/>
+  },
 
   {
     path: "*",
     element: <NotFound />,
   },
+  
   
 ]);
 

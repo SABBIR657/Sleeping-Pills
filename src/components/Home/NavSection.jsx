@@ -30,8 +30,13 @@ const NavSection = () => {
               Sleeping Pills
             </h1>
             {/* Right Section (My Cart + Dropdown) for Mobile */}
-            <div className="flex items-center space-x-2 md:hidden">
-              <Button color="primary" className="bg-black text-white" variant="ghost" radius="none">
+            <div className="flex items-center space-x-2 md:hidden ">
+              <Button
+                color="primary"
+                className="bg-black text-white"
+                variant="ghost"
+                radius="none"
+              >
                 (0) MyCart
               </Button>
               <DropdownMenuBar />
@@ -46,8 +51,13 @@ const NavSection = () => {
           />
 
           {/* Right Section for Larger Screens */}
-          <div className="hidden md:flex items-center space-x-2">
-            <Button color="primary" className="bg-black text-white" variant="ghost" radius="none">
+          <div className="hidden md:flex items-center space-x-2 md:flex-row-reverse ">
+            <Button
+              color="primary"
+              className="bg-black text-white"
+              variant="ghost"
+              radius="none"
+            >
               (0) MyCart
             </Button>
             <DropdownMenuBar />

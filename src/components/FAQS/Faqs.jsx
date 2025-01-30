@@ -25,7 +25,7 @@ const Faqs = () => {
       <div>
         <h1 className="text-lg font-bold">Who we are</h1>
         <p>
-          The effects of insomnia can impact nearly every aspect of a person's
+          The effects of insomnia can impact nearly every aspect of a person
           life and although there is effective medication available, it is
           often left untreated. This is why our team have come together to
           develop an online platform to address this need. With the internet
@@ -43,7 +43,7 @@ const Faqs = () => {
           quality of life. While some people have the occasional sleepless
           night which can be treated by simple changes to sleep hygiene,
           others experience trouble sleeping more frequently. Long-term
-          insomnia can have devastating effects on a person's psychological
+          insomnia can have devastating effects on a persons psychological
           and physical well-being. It can cause anxiety and depression and
           lead to health issues such as a weakened immune system and
           cardiovascular problems.
@@ -65,7 +65,7 @@ const Faqs = () => {
           the adult population suffers from anxiety and only about 37% of
           people receive effective treatment. Having anxiety on occasion is
           considered normal but when it becomes continuous and has a negative
-          impact on a person's quality of life, treatment is advisable. We
+          impact on a persons quality of life, treatment is advisable. We
           provide medications that are commonly used to treat anxiety such as
           Xanax and Valium.
         </p>
