@@ -8,7 +8,7 @@ import CustomerReview from "../../components/Home/CustomerReview";
 import NavSection from "../../components/Home/NavSection";
 import {Breadcrumbs, BreadcrumbItem} from "@heroui/react";
 
-const SleepingTablents = () => {
+const SleepingTablets = () => {
   return (
     <div className="">
       <NavSection/>
@@ -76,4 +76,4 @@ const SleepingTablents = () => {
   );
 };
 
-export default SleepingTablents;
+export default SleepingTablets;

@@ -4,7 +4,6 @@ import App from "../App";
 import NotFound from "../pages/NotFound";
 import SignIn from "../pages/SignIn";
 import SignUp from "../pages/SignUp";
-import SleepingTablents from "../pages/products/SleepingTablents.jsx";
 import AnixietyMedication from "../pages/Products/AnixietyMedication.jsx";
 import PainKillers from "../pages/Products/PainKillers.jsx";
 import Nootropics from "../pages/Products/Nootropics.jsx";
@@ -12,6 +11,7 @@ import AboutUs from "../components/About-Us/AboutUs.jsx";
 import Faqs from "../components/FAQS/Faqs.jsx";
 import Testimonial from "../components/Testimonial/Testimonial.jsx";
 import BuyMedicine from "../components/BuyMedicine/BuyMedicine.jsx";
+import SleepingTablets from "../pages/products/SleepingTablets.jsx";
 
 const routes = createBrowserRouter([
   {
@@ -43,7 +43,7 @@ const routes = createBrowserRouter([
     
       index: true,
       path: "/products/sleeping-tablets",
-      element: <SleepingTablents/>
+      element: <SleepingTablets/>
     
   },
 
