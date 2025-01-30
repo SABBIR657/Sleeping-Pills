@@ -11,7 +11,7 @@ import BuyMedicine from "../components/BuyMedicine/BuyMedicine.jsx";
 import SleepingTablets from "../pages/products/SleepingTablets.jsx";
 import AnxietyMedication from "../pages/products/AnxietyMedication.jsx";
 import NotrePics from "../pages/products/NotrePics.jsx";
-import PainKillers from "../pages/Products/PainKillers.jsx";
+import PainKillers from "../pages/Products/PainKillers";
 
 
 
