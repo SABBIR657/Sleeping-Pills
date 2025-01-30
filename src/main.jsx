@@ -7,7 +7,7 @@ import "./index.css";
 import AuthProvider from "./hooks/AuthContextProvider";
 import { ThemeProvider } from "./hooks/useTheme";
 import { RouterProvider } from "react-router-dom";
-import routes from "./routes/routes";
+import routes from "./routes/Routes.jsx";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Footer from "./components/Home/Footer";
 import PopChat from "./components/ui/PopChat";
