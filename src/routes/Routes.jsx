@@ -4,7 +4,7 @@ import App from "../App";
 import NotFound from "../pages/NotFound";
 import SignIn from "../pages/SignIn";
 import SignUp from "../pages/SignUp";
-import SleepingTablents from "../pages/Products/SleepingTablents.jsx";
+import SleepingTablents from "../pages/products/SleepingTablents.jsx";
 import AnixietyMedication from "../pages/Products/AnixietyMedication.jsx";
 import PainKillers from "../pages/Products/PainKillers.jsx";
 import Nootropics from "../pages/Products/Nootropics.jsx";
