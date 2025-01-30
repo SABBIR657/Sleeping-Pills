@@ -4,14 +4,14 @@ import App from "../App";
 import NotFound from "../pages/NotFound";
 import SignIn from "../pages/SignIn";
 import SignUp from "../pages/SignUp";
-import SleepingTablents from "../pages/Products/SleepingTablents";
-import AnixietyMedication from "../pages/Products/AnixietyMedication";
-import PainKillers from "../pages/Products/PainKillers";
-import Nootropics from "../pages/Products/Nootropics";
-import AboutUs from "../components/About-Us/AboutUs";
-import Faqs from "../components/FAQS/Faqs";
-import Testimonial from "../components/Testimonial/Testimonial";
-import BuyMedicine from "../components/BuyMedicine/BuyMedicine";
+import SleepingTablents from "../pages/Products/SleepingTablents.jsx";
+import AnixietyMedication from "../pages/Products/AnixietyMedication.jsx";
+import PainKillers from "../pages/Products/PainKillers.jsx";
+import Nootropics from "../pages/Products/Nootropics.jsx";
+import AboutUs from "../components/About-Us/AboutUs.jsx";
+import Faqs from "../components/FAQS/Faqs.jsx";
+import Testimonial from "../components/Testimonial/Testimonial.jsx";
+import BuyMedicine from "../components/BuyMedicine/BuyMedicine.jsx";
 
 const routes = createBrowserRouter([
   {
