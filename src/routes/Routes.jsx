@@ -37,65 +37,67 @@ const routes = createBrowserRouter([
         path: "/signup",
         element: <SignUp />,
       },
-      {
-    
-        index: true,
-        path: "/products/sleeping-tablets",
-        element: <SleepingTablets/>
-      
-    },
-    {
-      index: true,
-      path: "/products/anxiety-medication",
-      element: <AnxietyMedication/>
-    },
-  
-    {
-      index: true,
-      path: "/products/painkillers",
-      element: <PainKillers/>
-  
-  
-    },
-    {
-      index: true,
-      path: "/products/nootropics",
-      element: <NotrePics/>
-    },
-  
-    {
-      index: true,
-      path: "/about-us",
-      element: <AboutUs/>
-  
-    },
-    {
-       index: true,
-       path: "/faqs",
-       element: <Faqs/>
-    },
-    {
-        index: true,
-        path: "/testimonial",
-        element: <Testimonial/>
-    },
-    {
-       index: true,
-       path: "/buyMedicine",
-       element: <BuyMedicine/>
-    },
-      
-  {
-    path: "*",
-    element: <NotFound />,
-  },
-  
+     
   
      
     ],
     
    
   },
+
+  {
+    
+    index: true,
+    path: "/products/sleeping-tablets",
+    element: <SleepingTablets/>
+  
+},
+{
+  index: true,
+  path: "/products/anxiety-medication",
+  element: <AnxietyMedication/>
+},
+
+{
+  index: true,
+  path: "/products/painkillers",
+  element: <PainKillers/>
+
+
+},
+{
+  index: true,
+  path: "/products/nootropics",
+  element: <NotrePics/>
+},
+
+{
+  index: true,
+  path: "/about-us",
+  element: <AboutUs/>
+
+},
+{
+   index: true,
+   path: "/faqs",
+   element: <Faqs/>
+},
+{
+    index: true,
+    path: "/testimonial",
+    element: <Testimonial/>
+},
+{
+   index: true,
+   path: "/buyMedicine",
+   element: <BuyMedicine/>
+},
+  
+{
+path: "*",
+element: <NotFound />,
+},
+
 
  
 
